@@ -13,7 +13,8 @@ namespace StarChart
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/angular.min.js",
                         "~/Scripts/angular-route.min.js",
-                        "~/Scripts/app/app.js").IncludeDirectory("~/Scripts/app", "*.js", true));
+                        "~/Scripts/app/app.js")
+                        .IncludeDirectory("~/Scripts/app", "*.js", true));
 
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(

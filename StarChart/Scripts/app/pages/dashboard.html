@@ -1,3 +1,27 @@
-﻿<div>
-    {{title}}
+﻿<br />
+<br />
+
+<div class="row">
+    <div class="col-sm-3" ng-repeat="student in students track by $index">
+        <div class="thumbnail star-reciever-container">
+
+            <img class="img-rounded img-responsive img-profile" ng-hide="student.profileImage" src="/images/blank-profile.png" alt="persons face goes here">
+            <img class="img-rounded img-responsive img-profile" ng-show="student.profileImage" src="{{student.profileImage}}" alt="persons face goes here">
+            <div class="caption">
+                <h3 class="name">
+                    {{student.Name}}
+                </h3>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <button class="btn star-button" ng-click="giveStar(student)"><i class="glyphicon glyphicon-star"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="badge large-badge star-badge">
+                            {{student.StarCount}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

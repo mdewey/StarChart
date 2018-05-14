@@ -15,3 +15,18 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.img-profile{
+    width:50%;
+}
+
+.large-badge{
+    font-size:3em;
+}
+.star-badge{
+    color:gold;
+    background-color:dimgrey;
+}
+.star-button {
+    font-size:1.75em;
+}
